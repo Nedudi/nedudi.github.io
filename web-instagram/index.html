@@ -20,10 +20,10 @@
     <section id="Cover" class="slide cover"><div><h2>Как <br />сделать<br /> Instagram <br />в браузере</h2>
 <p><img src="pictures/cover.jpg" alt="" /></p>
 
-<p><strong>Дмитрий Дудин <a href="http://twitter.com/nedudi">@nedudi</a> <br />РИТ++ 2014 Москва</strong></p>
+<p><strong>Дмитрий Дудин <a href="http://twitter.com/nedudi">@nedudi</a> <br /></strong></p>
 
 </div></section>
-<section class="slide code12 noheader gray" id="hello"><div><h2>Hello</h2>
+<section class="slide code12 noheader gray" id="hello"><div>
 
 <p><a href="http://xbsoftware.com" target="_blank"><img style="margin:50px auto; height:110px; width:auto; display: block" src="img/logo-xbsoftware.png" /></a>
 <a href="http://webix.com" target="_blank"><img style="margin:20px auto; height:110px; width:auto; display: block" src="img/logo-webix.png" /></a>
@@ -218,7 +218,7 @@ void main() {
 <p><img style="width: 900px; margin:0 auto; display: block" src="img/webglimagefilter.png" /></p>
 
 </div></section>
-<section class="slide code13" id="webglimagefilter---"><div><h2>WebGLImageFilter прост в использовании</h2>
+<section class="slide code12" id="webglimagefilter---"><div><h2>WebGLImageFilter прост в использовании</h2>
 
 <pre><code>var filter = new WebGLImageFilter();
 filter.addFilter(<mark>'hue', 180</mark>);
@@ -233,9 +233,9 @@ var filteredImage = filter.apply(inputImage);
 <ol>
   <li class="next">Очень, очень, очень быстро.</li>
   <li class="next">Есть несколько хороших плагинов.</li>
-  <li class="next">Можно использовать готовые шейдеры 
-<br />написаные на языке GLSL 
-<br />для OpenGL за последние 14 лет 
+  <li class="next">Можно использовать готовые шейдеры
+<br />написаные на языке GLSL
+<br />для OpenGL за последние 14 лет
 <br />(начиная c 2001 года)</li>
 </ol>
 
@@ -253,10 +253,10 @@ var filteredImage = filter.apply(inputImage);
 </div></section>
 <section class="slide codepl200 code15" id="css-"><div><h2>Синтаксис CSS-фильтров</h2>
 
-<pre><code>-webkit-filter: 
-  brightness(1.4) 
-  contrast(2) 
-  hue-rotate(300deg) 
+<pre><code>-webkit-filter:
+  brightness(1.4)
+  contrast(2)
+  hue-rotate(300deg)
   sepia(0.3);
 </code></pre>
 
@@ -292,12 +292,12 @@ var filteredImage = filter.apply(inputImage);
 </div></section>
 <section class="slide" id="section-5"><div><h2>Синтаксис</h2>
 
-<pre><code>img { 
+<pre><code>img {
     -webkit-filter: custom(
-      none 
+      none
       mix(
-        url(<mark>someFragmentShader.fs</mark>) 
-        normal 
+        url(<mark>someFragmentShader.fs</mark>)
+        normal
         source-atop
       )
     );
@@ -345,10 +345,10 @@ void main()
 <section class="slide code14 codepl100" id="section-6"><div><h2>Нарисуем круг</h2>
 
 <pre><code>&lt;svg width="400" height="400"&gt;
-    &lt;circle 
-      cx="200" 
-      cy="200" 
-      fill="#3498db" 
+    &lt;circle
+      cx="200"
+      cy="200"
+      fill="#3498db"
       r="100"/&gt;
 &lt;/svg&gt;
 </code></pre>
@@ -369,7 +369,7 @@ void main()
       &lt;feGaussianBlur stdDeviation="50" /&gt;
     &lt;/filter&gt;
   <mark>&lt;/defs&gt;</mark>
-  &lt;circle filter="url(#f0)" cx="200" cy="200" 
+  &lt;circle filter="url(#f0)" cx="200" cy="200"
   fill="#3498db" r="100"/&gt;
 &lt;/svg&gt;
 </code></pre>
@@ -383,7 +383,7 @@ void main()
       &lt;feGaussianBlur stdDeviation="50" /&gt;
     <mark>&lt;/filter&gt;</mark>
   &lt;/defs&gt;
-  &lt;circle filter="url(#f0)" cx="200" cy="200" 
+  &lt;circle filter="url(#f0)" cx="200" cy="200"
   fill="#3498db" r="100"/&gt;
 &lt;/svg&gt;
 </code></pre>
@@ -397,7 +397,7 @@ void main()
       <mark>&lt;feGaussianBlur stdDeviation="50" /&gt;</mark>
     &lt;/filter&gt;
   &lt;/defs&gt;
-  &lt;circle filter="url(#f0)" cx="200" cy="200" 
+  &lt;circle filter="url(#f0)" cx="200" cy="200"
   fill="#3498db" r="100"/&gt;
 &lt;/svg&gt;
 </code></pre>
@@ -411,7 +411,7 @@ void main()
       &lt;feGaussianBlur stdDeviation="40" /&gt;
     <mark>&lt;/filter&gt;</mark>
   &lt;/defs&gt;
-  &lt;circle <mark>filter="url(<mark>#f0</mark>)"</mark> cx="200" cy="200" 
+  &lt;circle <mark>filter="url(<mark>#f0</mark>)"</mark> cx="200" cy="200"
   fill="#3498db" r="100"/&gt;
 &lt;/svg&gt;
 </code></pre>
@@ -432,9 +432,9 @@ void main()
 <section class="slide code14 codepl150" id="svg"><div><h2>Картинка внутри SVG</h2>
 
 <pre><code>&lt;svg width="1024" height="768"&gt;
-  &lt;image 
-    width="100%" 
-    height="100%"  
+  &lt;image
+    width="100%"
+    height="100%"
     <mark>xlink:href="img/girl.jpg"</mark> /&gt;
 &lt;/svg&gt;
 </code></pre>
@@ -448,7 +448,7 @@ void main()
       &lt;feGaussianBlur stdDeviation="10" /&gt;
     <mark>&lt;/filter&gt;</mark>
   &lt;/defs&gt;
-  &lt;image <mark>filter="url(<mark>#f1</mark>)"</mark> xlink:href="img/girl.jpg" 
+  &lt;image <mark>filter="url(<mark>#f1</mark>)"</mark> xlink:href="img/girl.jpg"
   width="100%" height="100%" /&gt;
 &lt;/svg&gt;
 </code></pre>
@@ -520,7 +520,7 @@ void main()
     <filter id="f2">
       <fegaussianblur in="SourceGraphic" result="a1" stddeviation="3" />
       <fecolormatrix in="a1" type="saturate" values="0">
-        
+
       </fecolormatrix>
     </filter>
   </defs>
@@ -687,10 +687,10 @@ void main()
 </div></section>
 <section class="slide code10" id="fecomponenttransfer-13"><div><h2>feComponentTransfer</h2>
 <pre><code>&lt;feComponentTransfer&gt;
-  &lt;feFuncR 
-    type="<mark>gamma</mark>" 
-    amplitude="2" 
-    exponent="0.5" 
+  &lt;feFuncR
+    type="<mark>gamma</mark>"
+    amplitude="2"
+    exponent="0.5"
     offset="0.2"
   /&gt;
 &lt;/feComponentTransfer&gt;
@@ -726,13 +726,13 @@ void main()
 </div></section>
 <section class="slide code12" id="fecolormatrix-2"><div><h2>feColorMatrix</h2>
 
-<pre><code>&lt;feColorMatrix 
+<pre><code>&lt;feColorMatrix
 type="<mark>matrix</mark>"
 values="
-  <mark><mark>0.343</mark> <mark>0.669</mark> <mark>0.119</mark> <mark>0</mark> <mark>0</mark></mark> 
+  <mark><mark>0.343</mark> <mark>0.669</mark> <mark>0.119</mark> <mark>0</mark> <mark>0</mark></mark>
   <mark><mark>0.249</mark> <mark>0.626</mark> <mark>0.130</mark> <mark>0</mark> <mark>0</mark></mark>
   <mark><mark>0.172</mark> <mark>0.334</mark> <mark>0.111</mark> <mark>0</mark> <mark>0</mark></mark>
-  <mark><mark>0    </mark> <mark>0    </mark> <mark>0    </mark> <mark>1</mark> <mark>0</mark></mark> 
+  <mark><mark>0    </mark> <mark>0    </mark> <mark>0    </mark> <mark>1</mark> <mark>0</mark></mark>
 "/&gt;
 </code></pre>
 
@@ -754,8 +754,8 @@ values="
 <svg class="cover" width="1024" height="768">
   <defs>
     <filter id="f77">
-<fecolormatrix in="SourceGraphic" type="matrix" values="5 0 0 0 -0.2 
-                                                        0 1.2 0 0 -0.2 
+<fecolormatrix in="SourceGraphic" type="matrix" values="5 0 0 0 -0.2
+                                                        0 1.2 0 0 -0.2
                                                         0 5 1.2 0 -0.2
                                                         5 0 0 1 0" />
     </filter>
@@ -769,8 +769,8 @@ values="
 <svg class="cover" width="1024" height="768">
   <defs>
     <filter id="f76">
-<fecolormatrix in="SourceGraphic" type="matrix" values="1.2 0 0 0 -0.2 
-                                                        2   0 2 2 -0.2 
+<fecolormatrix in="SourceGraphic" type="matrix" values="1.2 0 0 0 -0.2
+                                                        2   0 2 2 -0.2
                                                         2   2 1.2 0 -0.2
                                                         2   0 0 1 0" />
     </filter>
@@ -916,8 +916,8 @@ values="
 <pre><code>&lt;feConvolveMatrix <mark>order="3"</mark>
 kernelMatrix="1 -1  1 -1 -1 -1 1 -1 1"/&gt;
 
- 1    -1     1 
--1    -1    -1 
+ 1    -1     1
+-1    -1    -1
 1    -1     1
 </code></pre>
 
@@ -952,7 +952,7 @@ kernelMatrix="1 -1  1 -1 -1 -1 1 -1 1"/&gt;
 </div></section>
 <section class="slide code9 codecenter cover w h headerlabel" id="feconvolvematrix-2"><div><h2>feConvolveMatrix</h2>
 
-<pre><code>&lt;feConvolveMatrix order="<mark>3</mark>" 
+<pre><code>&lt;feConvolveMatrix order="<mark>3</mark>"
 kernelMatrix="<mark>1 -1 1 -1 -0.1 -1 1 -1 1</mark>"/&gt;
 </code></pre>
 
@@ -968,7 +968,7 @@ kernelMatrix="<mark>1 -1 1 -1 -0.1 -1 1 -1 1</mark>"/&gt;
 </div></section>
 <section class="slide code9 codecenter cover w h headerlabel" id="feconvolvematrix-3"><div><h2>feConvolveMatrix</h2>
 
-<pre><code>&lt;feConvolveMatrix order="<mark>3</mark>" 
+<pre><code>&lt;feConvolveMatrix order="<mark>3</mark>"
 kernelMatrix="<mark>9 0 0 0 1 0 0 0 -9</mark>"/&gt;
 </code></pre>
 
@@ -984,7 +984,7 @@ kernelMatrix="<mark>9 0 0 0 1 0 0 0 -9</mark>"/&gt;
 </div></section>
 <section class="slide code9 codecenter cover w h headerlabel" id="feconvolvematrix-4"><div><h2>feConvolveMatrix</h2>
 
-<pre><code>&lt;feConvolveMatrix order="<mark>3</mark>" 
+<pre><code>&lt;feConvolveMatrix order="<mark>3</mark>"
 kernelMatrix="<mark>-1 -1 -1 -1 7 -1 -1 -1 -1</mark>"/&gt;
 </code></pre>
 
@@ -1000,7 +1000,7 @@ kernelMatrix="<mark>-1 -1 -1 -1 7 -1 -1 -1 -1</mark>"/&gt;
 </div></section>
 <section class="slide code6 codecenter cover w h headerlabel" id="feconvolvematrix-5"><div><h2>feConvolveMatrix</h2>
 
-<pre><code>&lt;feConvolveMatrix order="<mark>5</mark>" 
+<pre><code>&lt;feConvolveMatrix order="<mark>5</mark>"
 kernelMatrix="<mark>1 1 1 1 1 1 -2 -2 -2 1 1 -2 0 -2 1 1 -2 -2 -2 1 1 1 1 1 1</mark>"/&gt;
 </code></pre>
 
@@ -1020,7 +1020,7 @@ kernelMatrix="<mark>1 1 1 1 1 1 -2 -2 -2 1 1 -2 0 -2 1 1 -2 -2 -2 1 1 1 1 1 1</m
 </div></section>
 <section class="slide code17" id="fecomposite-1"><div><h2>feComposite</h2>
 
-<pre><code>&lt;feComposite 
+<pre><code>&lt;feComposite
     in="<mark>source1</mark>"
     in2="<mark>source2</mark>"
     operator="<mark>xor</mark>"/&gt;
@@ -1139,7 +1139,7 @@ kernelMatrix="<mark>1 1 1 1 1 1 -2 -2 -2 1 1 -2 0 -2 1 1 -2 -2 -2 1 1 1 1 1 1</m
 </div></section>
 <section class="slide code17" id="feblend-1"><div><h2>feBlend</h2>
 
-<pre><code>&lt;feBlend 
+<pre><code>&lt;feBlend
     in="<mark>source1</mark>"
     in2="<mark>source2</mark>"
     mode="<mark>lighten</mark>"/&gt;
@@ -1249,8 +1249,8 @@ kernelMatrix="<mark>1 1 1 1 1 1 -2 -2 -2 1 1 -2 0 -2 1 1 -2 -2 -2 1 1 1 1 1 1</m
       <fecomposite id="c1-0" in="SourceGraphic" in2="blurOut-0" operator="arithmetic" k1="0" k2="3.000000" k3="-1.90000" k4="0" />
       <fecolormatrix result="sat-res" type="matrix" values=".343 .669 .119 0 0 .249 .626 .130 0 0 .172 .334 .111 0 0 .000 .000 .000 1 0" />
       <feimage xlink:href="img/dot.jpg" x="1" y="1" width="7" height="7" result="texture-res" />
-      <fetile in="texture-res" result="tile-res" />       
-      <feblend in="sat-res" in2="tile-res" mode="darken" />  
+      <fetile in="texture-res" result="tile-res" />
+      <feblend in="sat-res" in2="tile-res" mode="darken" />
     </filter>
   </defs>
   <image filter="url(#fbTileEx)" xlink:href="img/obama.jpg" x="0" y="0" width="100%" height="100%" />
@@ -1336,7 +1336,7 @@ kernelMatrix="<mark>1 1 1 1 1 1 -2 -2 -2 1 1 -2 0 -2 1 1 -2 -2 -2 1 1 1 1 1 1</m
         </fecomponenttransfer>
         <fedisplacementmap in="redOut" in2="map" result="redRotateOut" scale="40" xchannelselector="R" ychannelselector="G" />
 
-       
+
 
       </filter>
     </defs>
@@ -1461,8 +1461,8 @@ kernelMatrix="<mark>1 1 1 1 1 1 -2 -2 -2 1 1 -2 0 -2 1 1 -2 -2 -2 1 1 1 1 1 1</m
       <filter id="dpmap71" x="-20%" y="-20%" width="140%" height="140%" filterunits="objectBoundingBox" primitiveunits="userSpaceOnUse">
         <feimage result="map" xlink:href="img/sphere.png" />
         <feoffset in="map" result="map1" dx="20" dy="60" />
-        <fedisplacementmap id="zzz0" in="SourceGraphic" in2="map1" result="res1" scale="190" xchannelselector="R" ychannelselector="G">        
-          <animate xlink:href="#zzz0" xmlns="http://www.w3.org/2000/svg" attributename="scale" values="0;120;0" dur="2s" repeatcount="indefinite" />  
+        <fedisplacementmap id="zzz0" in="SourceGraphic" in2="map1" result="res1" scale="190" xchannelselector="R" ychannelselector="G">
+          <animate xlink:href="#zzz0" xmlns="http://www.w3.org/2000/svg" attributename="scale" values="0;120;0" dur="2s" repeatcount="indefinite" />
         </fedisplacementmap>
       </filter>
     </defs>
@@ -1473,7 +1473,7 @@ kernelMatrix="<mark>1 1 1 1 1 1 -2 -2 -2 1 1 -2 0 -2 1 1 -2 -2 -2 1 1 1 1 1 1</m
 <section class="slide shout" id="section-17"><div><h2>Возможности анимации</h2>
 
 </div></section>
-<section class="slide code13" id="svg-"><div><h2>Синтаксис для SVG анимаций</h2>
+<section class="slide code12" id="svg-"><div><h2>Синтаксис для SVG анимаций</h2>
 
 <pre><code>&lt;feColorMatrix type="saturate" <mark>values="0.2"</mark>&gt;
 
@@ -1481,7 +1481,7 @@ kernelMatrix="<mark>1 1 1 1 1 1 -2 -2 -2 1 1 -2 0 -2 1 1 -2 -2 -2 1 1 1 1 1 1</m
 </code></pre>
 
 </div></section>
-<section class="slide code13" id="svg--1"><div><h2>Синтаксис для SVG анимаций</h2>
+<section class="slide code12" id="svg--1"><div><h2>Синтаксис для SVG анимаций</h2>
 
 <pre><code>&lt;feColorMatrix type="saturate" values="0.2"&gt;
   &lt;animate <mark>attributeName</mark>="values" /&gt;
@@ -1489,7 +1489,7 @@ kernelMatrix="<mark>1 1 1 1 1 1 -2 -2 -2 1 1 -2 0 -2 1 1 -2 -2 -2 1 1 1 1 1 1</m
 </code></pre>
 
 </div></section>
-<section class="slide code13" id="svg--2"><div><h2>Синтаксис для SVG анимаций</h2>
+<section class="slide code12" id="svg--2"><div><h2>Синтаксис для SVG анимаций</h2>
 
 <pre><code>&lt;feColorMatrix type="saturate" <mark>values</mark>="0.2"&gt;
   &lt;animate attributeName="<mark>values</mark>" /&gt;
@@ -1497,13 +1497,13 @@ kernelMatrix="<mark>1 1 1 1 1 1 -2 -2 -2 1 1 -2 0 -2 1 1 -2 -2 -2 1 1 1 1 1 1</m
 </code></pre>
 
 </div></section>
-<section class="slide code13" id="svg--3"><div><h2>Синтаксис для SVG анимаций</h2>
+<section class="slide code12" id="svg--3"><div><h2>Синтаксис для SVG анимаций</h2>
 
 <pre><code>&lt;feColorMatrix type="saturate" <mark>values</mark>="0.2"&gt;
-  &lt;animate 
-    <mark>attributeName="<mark>values</mark>"</mark> 
+  &lt;animate
+    <mark>attributeName="<mark>values</mark>"</mark>
     <mark>values="<mark>0;5;0</mark>"</mark>
-    <mark>dur="<mark>2s</mark>"</mark> 
+    <mark>dur="<mark>2s</mark>"</mark>
     <mark>repeatCount="<mark>indefinite</mark>"</mark>/&gt;
 &lt;/feColorMatrix&gt;
 </code></pre>
@@ -1569,7 +1569,7 @@ kernelMatrix="<mark>1 1 1 1 1 1 -2 -2 -2 1 1 -2 0 -2 1 1 -2 -2 -2 1 1 1 1 1 1</m
 
 <svg width="1024" height="768">
     <defs>
-        <filter id="f5">           
+        <filter id="f5">
             <!--Soften-Sharpen-->
             <fegaussianblur id="b1-0" result="blurOut-0" in="SourceGraphic" stddeviation="50" />
             <fecomposite id="c1-0" result="dynResult-0" in="SourceGraphic" in2="blurOut-0" operator="arithmetic" k1="0" k2="1.600000" k3="-0.600000" k4="0" />
@@ -1584,7 +1584,7 @@ kernelMatrix="<mark>1 1 1 1 1 1 -2 -2 -2 1 1 -2 0 -2 1 1 -2 -2 -2 1 1 1 1 1 1</m
 <svg width="1024" height="768">
     <defs>
         <filter id="f6">
-            
+
             <!--Soften-Sharpen-->
             <fegaussianblur id="b1-0" result="blurOut-0" in="SourceGraphic" stddeviation="50" />
             <fecomposite id="c1-0" result="dynResult-0" in="SourceGraphic" in2="blurOut-0" operator="arithmetic" k1="0" k2="1.600000" k3="-0.600000" k4="0" />
@@ -1598,9 +1598,9 @@ kernelMatrix="<mark>1 1 1 1 1 1 -2 -2 -2 1 1 -2 0 -2 1 1 -2 -2 -2 1 1 1 1 1 1</m
                 <fefunca type="table" tablevalues="1 0 0 0 0"></fefunca>
             </fecomponenttransfer>
             <fegaussianblur in="invertlight" result="featherspot" stddeviation="10"></fegaussianblur>
-            <fecomposite operator="xor" result="infocus" in2="dynResult-0" in="featherspot"></fecomposite>     
+            <fecomposite operator="xor" result="infocus" in2="dynResult-0" in="featherspot"></fecomposite>
             <fegaussianblur in="SourceGraphic" result="outfocus" stddeviation="7"></fegaussianblur>
-            <fecomposite operator="over" in="infocus" in2="outfocus"></fecomposite>     
+            <fecomposite operator="over" in="infocus" in2="outfocus"></fecomposite>
         </filter>
     </defs>
     <image filter="url(#f6)" xlink:href="img/girl.jpg" width="100%" height="100%" preserveaspectratio="xMidYMid meet" />
@@ -1612,7 +1612,7 @@ kernelMatrix="<mark>1 1 1 1 1 1 -2 -2 -2 1 1 -2 0 -2 1 1 -2 -2 -2 1 1 1 1 1 1</m
 <svg width="1024" height="768">
     <defs>
         <filter id="f7">
-            
+
             <!--Soften-Sharpen-->
             <fegaussianblur id="b1-0" result="blurOut-0" in="SourceGraphic" stddeviation="50" />
             <fecomposite id="c1-0" result="dynResult-0" in="SourceGraphic" in2="blurOut-0" operator="arithmetic" k1="0" k2="1.600000" k3="-0.600000" k4="0" />
@@ -1626,11 +1626,11 @@ kernelMatrix="<mark>1 1 1 1 1 1 -2 -2 -2 1 1 -2 0 -2 1 1 -2 -2 -2 1 1 1 1 1 1</m
                 <fefunca type="table" tablevalues="1 0 0 0 0"></fefunca>
             </fecomponenttransfer>
             <fegaussianblur in="invertlight" result="featherspot" stddeviation="10"></fegaussianblur>
-            <fecomposite operator="xor" result="infocus" in2="dynResult-0" in="featherspot"></fecomposite>     
+            <fecomposite operator="xor" result="infocus" in2="dynResult-0" in="featherspot"></fecomposite>
             <fegaussianblur in="SourceGraphic" result="outfocus" stddeviation="7"></fegaussianblur>
-            <fecomposite operator="over" in="infocus" in2="outfocus"></fecomposite>    
-  
-            <!--saturate-->      
+            <fecomposite operator="over" in="infocus" in2="outfocus"></fecomposite>
+
+            <!--saturate-->
             <fecolormatrix type="saturate" values="0.5" result="a" />
 <fecolormatrix result="b" type="matrix" values=".343 .669 .119 0 0 .249 .626 .130 0 0 .172 .334 .111 0 0 .000 .000 .000 1 0" />
 
@@ -1649,7 +1649,7 @@ kernelMatrix="<mark>1 1 1 1 1 1 -2 -2 -2 1 1 -2 0 -2 1 1 -2 -2 -2 1 1 1 1 1 1</m
 <svg width="1024" height="768">
     <defs>
         <filter id="f8">
-            
+
 
 
 
@@ -1666,11 +1666,11 @@ kernelMatrix="<mark>1 1 1 1 1 1 -2 -2 -2 1 1 -2 0 -2 1 1 -2 -2 -2 1 1 1 1 1 1</m
                 <fefunca type="table" tablevalues="1 0 0 0 0"></fefunca>
             </fecomponenttransfer>
             <fegaussianblur in="invertlight" result="featherspot" stddeviation="10"></fegaussianblur>
-            <fecomposite operator="xor" result="infocus" in2="dynResult-0" in="featherspot"></fecomposite>     
+            <fecomposite operator="xor" result="infocus" in2="dynResult-0" in="featherspot"></fecomposite>
             <fegaussianblur in="SourceGraphic" result="outfocus" stddeviation="7"></fegaussianblur>
-            <fecomposite operator="over" in="infocus" in2="outfocus"></fecomposite>     
-  
-            <!--saturate-->      
+            <fecomposite operator="over" in="infocus" in2="outfocus"></fecomposite>
+
+            <!--saturate-->
             <fecolormatrix type="saturate" values="0.5" result="a" />
 <fecolormatrix result="b" type="matrix" values=".343 .669 .119 0 0 .249 .626 .130 0 0 .172 .334 .111 0 0 .000 .000 .000 1 0" />
 
@@ -1693,7 +1693,7 @@ kernelMatrix="<mark>1 1 1 1 1 1 -2 -2 -2 1 1 -2 0 -2 1 1 -2 -2 -2 1 1 1 1 1 1</m
 <svg width="1024" height="768">
     <defs>
         <filter id="f18">
-            
+
             <!--Soften-Sharpen-->
             <fegaussianblur id="b1-0" result="blurOut-0" in="SourceGraphic" stddeviation="50" />
             <fecomposite id="c1-0" result="dynResult-0" in="SourceGraphic" in2="blurOut-0" operator="arithmetic" k1="0" k2="1.600000" k3="-0.600000" k4="0" />
@@ -1708,11 +1708,11 @@ kernelMatrix="<mark>1 1 1 1 1 1 -2 -2 -2 1 1 -2 0 -2 1 1 -2 -2 -2 1 1 1 1 1 1</m
                 <fefunca type="table" tablevalues="1 0 0 0 0"></fefunca>
             </fecomponenttransfer>
             <fegaussianblur in="invertlight" result="featherspot" stddeviation="10"></fegaussianblur>
-            <fecomposite operator="xor" result="infocus" in2="dynResult-0" in="featherspot"></fecomposite>     
+            <fecomposite operator="xor" result="infocus" in2="dynResult-0" in="featherspot"></fecomposite>
             <fegaussianblur in="SourceGraphic" result="outfocus" stddeviation="7"></fegaussianblur>
-            <fecomposite operator="over" in="infocus" in2="outfocus"></fecomposite>  
+            <fecomposite operator="over" in="infocus" in2="outfocus"></fecomposite>
 
-            <!--saturate-->      
+            <!--saturate-->
             <fecolormatrix type="saturate" values="0.5" result="a" />
             <fecolormatrix result="b" type="matrix" values=".343 .669 .119 0 0 .249 .626 .130 0 0 .172 .334 .111 0 0 .000 .000 .000 1 0" />
 
@@ -1740,7 +1740,7 @@ kernelMatrix="<mark>1 1 1 1 1 1 -2 -2 -2 1 1 -2 0 -2 1 1 -2 -2 -2 1 1 1 1 1 1</m
 <svg width="1024" height="768">
     <defs>
         <filter id="f19">
-            
+
             <!--Soften-Sharpen-->
             <fegaussianblur id="b1-0" result="blurOut-0" in="SourceGraphic" stddeviation="50" />
             <fecomposite id="c1-0" result="dynResult-0" in="SourceGraphic" in2="blurOut-0" operator="arithmetic" k1="0" k2="1.600000" k3="-0.600000" k4="0" />
@@ -1755,11 +1755,11 @@ kernelMatrix="<mark>1 1 1 1 1 1 -2 -2 -2 1 1 -2 0 -2 1 1 -2 -2 -2 1 1 1 1 1 1</m
                 <fefunca type="table" tablevalues="1 0 0 0 0"></fefunca>
             </fecomponenttransfer>
             <fegaussianblur in="invertlight" result="featherspot" stddeviation="10"></fegaussianblur>
-            <fecomposite operator="xor" result="infocus" in2="dynResult-0" in="featherspot"></fecomposite>     
+            <fecomposite operator="xor" result="infocus" in2="dynResult-0" in="featherspot"></fecomposite>
             <fegaussianblur in="SourceGraphic" result="outfocus" stddeviation="7"></fegaussianblur>
-            <fecomposite operator="over" in="infocus" in2="outfocus"></fecomposite>  
+            <fecomposite operator="over" in="infocus" in2="outfocus"></fecomposite>
 
-            <!--saturate-->      
+            <!--saturate-->
             <fecolormatrix type="saturate" values="0.5" result="a" />
             <fecolormatrix result="b" type="matrix" values=".343 .669 .119 0 0 .249 .626 .130 0 0 .172 .334 .111 0 0 .000 .000 .000 1 0" />
 
@@ -1779,11 +1779,11 @@ kernelMatrix="<mark>1 1 1 1 1 1 -2 -2 -2 1 1 -2 0 -2 1 1 -2 -2 -2 1 1 1 1 1 1</m
 
 
         </filter>
-        
+
     </defs>
 
     <image filter="url(#f19)" xlink:href="img/girl.jpg" width="100%" height="100%" preserveaspectratio="xMidYMid meet" />
-        
+
     <g>
     <radialgradient id="MyGradient">
       <stop offset="40%" stop-color="#000000" stop-opacity="0" />
@@ -1805,7 +1805,7 @@ kernelMatrix="<mark>1 1 1 1 1 1 -2 -2 -2 1 1 -2 0 -2 1 1 -2 -2 -2 1 1 1 1 1 1</m
 
 <svg width="1024" height="768">
   <defs>
-    <filter id="fscary1">           
+    <filter id="fscary1">
       <fegaussianblur id="b1-0" result="blurOut-0" in="SourceGraphic" stddeviation="16" />
       <fecomposite id="c1-0" in="SourceGraphic" in2="blurOut-0" operator="arithmetic" k1="0" k2="2.600000" k3="-1.600000" k4="0" />
 
@@ -1849,7 +1849,7 @@ kernelMatrix="<mark>1 1 1 1 1 1 -2 -2 -2 1 1 -2 0 -2 1 1 -2 -2 -2 1 1 1 1 1 1</m
 
 <svg width="1024" height="768">
   <defs>
-    <filter id="fscary2">           
+    <filter id="fscary2">
       <fegaussianblur id="b1-0" result="blurOut-0" in="SourceGraphic" stddeviation="16" />
       <fecomposite id="c1-0" in="SourceGraphic" in2="blurOut-0" operator="arithmetic" k1="0" k2="2.600000" k3="-1.600000" k4="0" />
 
@@ -1874,7 +1874,7 @@ kernelMatrix="<mark>1 1 1 1 1 1 -2 -2 -2 1 1 -2 0 -2 1 1 -2 -2 -2 1 1 1 1 1 1</m
       <feblend in="edges" in2="texture1-res" result="a" mode="multiply" />
       <feblend in="texture2-res" in2="a" result="b" mode="multiply" />
       <feblend in="texture3-res" in2="b" result="c" mode="multiply" />
-      <feblend in="texture4-res" in2="c" mode="multiply" />            
+      <feblend in="texture4-res" in2="c" mode="multiply" />
     </filter>
   </defs>
   <image filter="url(#fscary2)" xlink:href="img/kuk.jpg" width="100%" height="100%" />
@@ -1885,7 +1885,7 @@ kernelMatrix="<mark>1 1 1 1 1 1 -2 -2 -2 1 1 -2 0 -2 1 1 -2 -2 -2 1 1 1 1 1 1</m
 
 <svg width="1024" height="768">
   <defs>
-    <filter id="fscary3">           
+    <filter id="fscary3">
       <fegaussianblur id="b1-0" result="blurOut-0" in="SourceGraphic" stddeviation="16" />
       <fecomposite id="c1-0" in="SourceGraphic" in2="blurOut-0" operator="arithmetic" k1="0" k2="2.600000" k3="-1.600000" k4="0" />
 
@@ -1919,7 +1919,7 @@ kernelMatrix="<mark>1 1 1 1 1 1 -2 -2 -2 1 1 -2 0 -2 1 1 -2 -2 -2 1 1 1 1 1 1</m
       <feblend in="texture2-res" in2="a" result="b" mode="multiply" />
       <feblend in="texture3-res" in2="b" result="c" mode="multiply" />
       <feblend in="texture4-res" in2="c" mode="darken" />
-    
+
     </filter>
   </defs>
   <image filter="url(#fscary3)" xlink:href="img/kuk.jpg" width="100%" height="100%" />
@@ -1960,7 +1960,7 @@ kernelMatrix="<mark>1 1 1 1 1 1 -2 -2 -2 1 1 -2 0 -2 1 1 -2 -2 -2 1 1 1 1 1 1</m
 
 img {
   -webkit-filter: url(<mark>#f1</mark>);
-  filter: url(<mark>#f1</mark>);   
+  filter: url(<mark>#f1</mark>);
 }
 </code></pre>
 
@@ -1976,23 +1976,23 @@ img {
 
 <mark>div</mark> {
   -webkit-filter: url(#f1);
-  filter: url(#f1);   
+  filter: url(#f1);
 }
 </code></pre>
 
 </div></section>
-<section class="slide cover w h headerlabel" id="rit"><div><h2>rit</h2>
+<section class="slide cover w h headerlabel" id="wsd-before"><div>
 
 <svg width="1024" height="768">
-    <image xlink:href="img/rit.png" width="100%" height="100%" preserveaspectratio="xMidYMid meet" />
+    <image xlink:href="img/wsd-site-before.png" width="100%" height="100%" preserveaspectratio="xMidYMid meet" />
 </svg>
+</div></section>
 
-<!-- filter id="f1">
-  <feColorMatrix type="matrix" values="0.343 0.669 0.119 0 0 0.249 0.626 0.130 0 0 0.172 0.334 0.111 0 0 0 0 0 1 0"></feColorMatrix>
-  <feColorMatrix type="hueRotate" values="250"></feColorMatrix>
-  <feColorMatrix type="saturate" result="sat-res" values="5"></feColorMatrix>
-  <feBlend in="sat-res" in2="edge-res" result="edges" mode="darken"></feBlend>
-</filter -->
+<section class="slide cover w h headerlabel" id="wsd-after"><div>
+
+<svg width="1024" height="768">
+    <image xlink:href="img/wsd-site-after.png" width="100%" height="100%" preserveaspectratio="xMidYMid meet" />
+</svg>
 
 </div></section>
 <section class="slide shout" class="cover" id="hhhw"><div><h2>Вопросы?</h2>
@@ -2017,7 +2017,7 @@ img {
 </div></section>
 
     <p class="badge"><a href="https://github.com/shower/shower">Fork me on Github</a></p>
-    
+
     <script src="shower/shower.min.js"></script>
     <!-- Copyright © 2014 Дмитрий Дудин @nedudi — http://twitter.com/nedudi, via @html5by — http://html5.by -->
 </body>
