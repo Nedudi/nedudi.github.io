@@ -716,7 +716,8 @@ void main()
 </div></section>
 <section class="slide code13" id="fecolormatrix-1"><div><h2>feColorMatrix</h2>
 
-<pre><code>| R' |     | a00 a01 a02 a03 a04 |   | R |
+<pre><code>
+| R' |     | a00 a01 a02 a03 a04 |   | R |
 | G' |     | a10 a11 a12 a13 a14 |   | G |
 | B' |  =  | a20 a21 a22 a23 a24 | * | B |
 | A' |     | a30 a31 a32 a33 a34 |   | A |
@@ -769,10 +770,10 @@ values="
 <svg class="cover" width="1024" height="768">
   <defs>
     <filter id="f76">
-<fecolormatrix in="SourceGraphic" type="matrix" values="1.2 0 0 0 -0.2
-                                                        2   0 2 2 -0.2
+<fecolormatrix in="SourceGraphic" type="matrix" values="1.2 0   0 0 -0.2
+                                                        2   0   2 2 -0.2
                                                         2   2 1.2 0 -0.2
-                                                        2   0 0 1 0" />
+                                                        2   0   0 1    0" />
     </filter>
   </defs>
   <image filter="url(#f76)" xlink:href="img/girl.jpg" width="100%" height="100%" preserveaspectratio="xMidYMid meet" />
@@ -1460,9 +1461,9 @@ kernelMatrix="<mark>1 1 1 1 1 1 -2 -2 -2 1 1 -2 0 -2 1 1 -2 -2 -2 1 1 1 1 1 1</m
     <defs>
       <filter id="dpmap71" x="-20%" y="-20%" width="140%" height="140%" filterunits="objectBoundingBox" primitiveunits="userSpaceOnUse">
         <feimage result="map" xlink:href="img/sphere.png" />
-        <feoffset in="map" result="map1" dx="20" dy="60" />
+        <feoffset in="map" result="map1" dx="0" dy="0" />
         <fedisplacementmap id="zzz0" in="SourceGraphic" in2="map1" result="res1" scale="190" xchannelselector="R" ychannelselector="G">
-          <animate xlink:href="#zzz0" xmlns="http://www.w3.org/2000/svg" attributename="scale" values="0;120;0" dur="2s" repeatcount="indefinite" />
+          <animate xlink:href="#zzz0" xmlns="http://www.w3.org/2000/svg" attributename="scale" values="0;190;0" dur="2s" repeatcount="indefinite" />
         </fedisplacementmap>
       </filter>
     </defs>
